@@ -1,0 +1,19 @@
+.topmovies{
+    margin-top: 40px;
+    /* height: 450px; */
+    align-items: center;
+    /* margin-bottom: 10px; */
+    /* max-width: 850px;
+    justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center;
+    margin-left: 120px; */
+}
+.text-container{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 25px;
+}
+.slider{
+    margin: 0px 25px;
+}

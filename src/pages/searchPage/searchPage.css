@@ -1,0 +1,78 @@
+.serach-btn-container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 150px;
+position: relative;
+}
+.search-page{
+    background-color: #0f0617;
+    color: aliceblue;
+    height:max-content
+}
+
+.serach-btn-container input{
+width: 40%;
+    border: 1px solid rgb(161, 159, 159);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.serach-btn-container button{
+    height: 70px;
+    width: 120px;
+    border: 1px solid rgb(161, 159, 159);
+    border-radius: 10px;
+    background-color: #8230c6;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.serach-btn-container button:hover{
+    background-color: #aa74d6;
+   
+}
+.cards-caontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.cancel-buttton{
+    position: absolute;
+    top: 25px;
+    right: 125px;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .search-page{
+        height: auto;
+    }
+    .cancel-buttton{
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .serach-btn-container{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+
+    }
+    .serach-btn-container button{
+        width: 80px;
+        margin-top: 10px;
+    }
+    .serach-btn-container input{
+        width: 350px;
+    }
+    .search-page{
+        height: auto;
+    }
+}

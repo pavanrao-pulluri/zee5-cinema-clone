@@ -1,0 +1,167 @@
+#footer{
+    bottom: 0;
+    /* position: fixed; */
+    width: 100%;
+    background-color: #0f0617; 
+    overflow-x: hidden;
+    
+}
+.footer {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer h1{
+  margin-left: -50px;
+}
+
+.h1-container{
+    font-size: 20px;  
+}
+
+.footer{
+    color: rgb(131, 135, 137);
+    display: flex;
+    margin-left: 62px;   
+  
+}
+.downloadimgs{
+    margin-left: 50px;
+
+}
+.ftr-1{
+    display: flex;
+}
+.socialcontect {
+    /* width: 50%; */
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .socialcontect img {
+    width: 25px;
+    margin: 0.7rem;
+  }
+  
+  .socialcontect img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+
+
+  .LinksSection {
+    margin-top: 30px;
+    /* top: 20px; */
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .linkbox {
+    width: 20%;
+    align-items: center;
+    /* height: 2in; */
+    /* margin: 1rem; */
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  
+  .linkbox li {
+    list-style: none;
+  }
+  .linkbox h5 {
+    color: white;
+  }
+  .linkbox a {
+    line-height: 30px;
+    color: #aaaaaa;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .linkbox li a:hover{
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .copyright {
+    padding: 0.2rem;
+    color: aliceblue;
+  }
+
+
+  @media (max-width: 918px) {
+    .contactsection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .downloadplaystore,
+    .socialcontect {
+      width: 80%;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  
+    .LinksSection {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .linkbox {
+      width: 50%;
+      margin: 0.1rem;
+    }
+  }
+
+.linkbox {
+  flex-basis: calc(20% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.linkbox h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.linkbox li {
+  margin-bottom: 5px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .socialcontect {
+    align-items: center;
+    display: block;
+    /* justify-content: center; */
+    margin-left: -50px;
+  }
+
+  .ftr-1{
+    display: inline;
+}
+  .linkbox {
+    flex-basis: calc(50% - 20px);
+    margin-right: 0;
+  }
+}
+
+      
