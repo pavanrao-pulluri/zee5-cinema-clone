@@ -35,10 +35,10 @@
 .ftr-1{
     display: flex;
 }
-.socialcontect {
+.socialcontect{
     /* width: 50%; */
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 1rem;
     align-items: center;
     margin-left: 50px;

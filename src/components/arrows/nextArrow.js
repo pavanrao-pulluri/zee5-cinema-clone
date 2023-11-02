@@ -8,7 +8,7 @@ const NextArrow = (props) => {
       className={className}
       style={{
         ...style,
-        background: "white",
+        background: "grey",
         borderRadius: "50%",
         display: "flex",
         justifyContent: "center",

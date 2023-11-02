@@ -1,10 +1,9 @@
 import React from "react";
 import "./videoPlayer.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ReactPlayer from "react-player";
 
 const VideoPlayer = () => {
-  const navigate = useNavigate;
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const videoUrl = searchParams.get("videoUrl");

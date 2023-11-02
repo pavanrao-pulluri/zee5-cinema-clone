@@ -8,7 +8,7 @@ const data = [
     id: 1,
     title: "Gadar 2",
     image:
-      "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/posters/tt8614884.jpg",
+      "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5437988/cover/1920x770ac7c2520eccc4058985879c5589cfa4b.jpg",
   },
   {
     id: 2,
@@ -50,21 +50,21 @@ const BootCarousel = () => {
     }
   };
 
-  useEffect(() => {
-    fetch(
-      `https://academics.newtonschool.co/api/v1/ott/show?page=${currentPage}&limit=6`,
-      {
-        headers: {
-          projectId: "uwszb3q8k7pf",
-        },
-      }
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setImageSlider(data.data);
-        console.log(data);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     `https://academics.newtonschool.co/api/v1/ott/show?page=${currentPage}&limit=6`,
+  //     {
+  //       headers: {
+  //         projectId: "uwszb3q8k7pf",
+  //       },
+  //     }
+  //   )
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setImageSlider(data.data);
+  //       console.log(data);
+  //     });
+  // }, []);
   return (
     <div>
       <Carousel
@@ -72,27 +72,26 @@ const BootCarousel = () => {
         onSelect={handleSelect}
         className="carousel-container"
       >
-        {imageslider.map((item) => (
+        {data.map((item) => (
           <Carousel.Item className="carousel-item">
             <img
               // onClick={handlehover(item)}
-              src={item.thumbnail}
+              src={item.image}
               alt={item.title}
               width="100%"
-              height="500px"
-              style={{ objectFit: "cover" }}
+              // height="500px"
+              style={{ objectFit: "contain" }}
             />
             <Carousel.Caption className="carousel-title">
-              <Button
+              {/* <Button
                 onClick={() => handlehover(item)}
                 style={{
                   background: "#8230c6",
                   color: "#fff",
-                  // marginLeft: "90px",
                 }}
               >
                 Watch
-              </Button>
+              </Button> */}
             </Carousel.Caption>
           </Carousel.Item>
         ))}

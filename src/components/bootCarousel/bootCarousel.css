@@ -2,11 +2,11 @@
     margin-top: 80px;
    cursor: pointer;
     /* width: 60%; */
-    /* height: 500px; */
-    /* height: px; */
+    height: auto;
+   
 }
 .carousel-item{
-    height: 500px;
+    /* height: 500px; */
 }
 .carousel-title{
     /* background-color:lightblue; */
